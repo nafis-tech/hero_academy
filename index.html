@@ -8,6 +8,9 @@
     <title>Hero Academy</title>
 
     <!-- Load external CSS styles -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
@@ -16,12 +19,12 @@
 
 <body>
     <div class="header">
-        <img class='image' src="logo.png" alt="" />
+        <img class='image' src="./image/logo.png" alt="" />
         <div >
-                <Button class='btn-header'href="/login" variant="outline">Artikel</Button>
-                <Button class='btn-header' href="/sylabus" variant="outline">Program Pendidikan</Button>
-                <Button class='btn-header' href="/login" variant="outline">Donasi</Button>
-                <Button class='btn-header' href="/patner" variant="outline">Join Patner</Button>
+                <a class='btn-header' target="_blank" href="artikel.html" variant="outline">Artikel</a>
+                <a class='btn-header' target="_blank" href="sylabus.html" variant="outline">Program Pendidikan</a>
+                <a class='btn-header' target="_blank" href="donasi.html" variant="outline">Donasi</a>
+                <a class='btn-header' target="_blank" href="/patner" variant="outline">Our Patner</a>
         </div>
     </div>
     <div class='div-1'>
@@ -29,14 +32,14 @@
             <div style="color:#0F2C67; font-size:50px; font-weight:bold; margin-bottom:3rem; width:20vw">Belajar dimanapun, Kapanpun.</div>
             <p>Temukan materi yang tepat untuk mengasah skill yang kamu miliki.</p>
             <div class='btn-regis'>
-                <button style="background-color:orange; border: none; border-radius: 8px;width: 12vw; height: 7vh; color: white;">Register</button>
-                <button style="background-color:white; border: 1px solid gray; border-radius: 8px;width: 12vw; height: 7vh; color: #0F2C67;">Card Event</button>
+                <a target="_blank" href="https://forms.gle/kDCgHDAthgQzwHUG6" style="background-color:orange; border: none; border-radius: 8px;width: 12vw; height: 7vh; color: white; text-align: center; padding-top: 0.3rem;">Register</a>
+                <a style="background-color:white; border: 1px solid gray; border-radius: 8px;width: 12vw; height: 7vh; color: #0F2C67;  text-align: center; padding-top: 0.3rem;">Card Event</a>
             </div>
         </div>
-        <img class='div-1b' src="foto2.png" alt="" />
+        <img class='div-1b' src="./image/foto2.png" alt="" />
     </div>
     <div class="img-detail">
-        <img class='laptop' src="laptop.png" alt="" />
+        <img class='laptop' src="./image/laptop.png" alt="" />
         <div class="detail" style="background-color: rgb(221, 222, 223);">
             <div style="color:#0F2C67; font-size:50px; font-weight:bold; margin-bottom:2rem; width:30vw">Ambil skill Terbaikmu, bersama Kami.</div>
             <p style="color:#0F2C67; margin-bottom:3rem; margin-right: 5rem;">Anda berada dijalur yang tepat. Kami adalah suatu tempat yang memiliki wadah untuk akses pendidikan yang lebih baik untuk meningkatkan
@@ -51,36 +54,30 @@
     <div class="cont">
         <div class="container">
             <div style="width: 18rem;">
-                <img src="img3.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                <img src="./image/img3.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop-img1">
-                <div class="top-left">FOTOGRAFER</div>
-                <a href="#form-daftar" class="bottom-right2"> See More</a>
             </div>
         </div>
         <div class="container">
             <div style="width: 18rem;">
-                <img src="img17.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                <img src="./image/img17.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop-img2">
-                <div class="bottom-right">WEB PENDIDIKAN</div>
-                <a href="#form-daftar" class="bottom-right2"> See More</a>
             </div>
         </div>
         <div class="container">
             <div style="width: 18rem;">
-                <img src="img10.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
+                <img src="./image/img10.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop-img3">
-                <div class="centered">ONLINE SHOP</div>
-                <a href="#form-daftar" class="bottom-right2"> See More</a>
             </div>
         </div>
     </div>
-    <div class="form-detail" style="background-image: url(back.jpeg) ; background-size: cover; background-repeat: no-repeat;">
+    <div class="form-detail" style="background-image: url(./image/back.jpeg) ; background-size: cover; background-repeat: no-repeat;">
         <div class="form-det">
-            <h1>Keep in Touch</h1>
-            <p>Hubungi kami dan Tim kamii akan merespon anda kurang dari 24 jamm</p>
-            <a href="">089679996914</a>
-            <a href="">email@heroacademy.com</a>
-            <a href="">Hero Academy Office</a>
+            <h1 style="font-size: 90px; color: #0F2C67; text-align: left; margin-bottom: 1rem;">Keep in Touch</h1>
+            <p style="color: #0F2C67">Hubungi kami dan Tim kami akan merespon anda kurang dari 24 jam</p>
+            <a style="color: #0F2C67" href="http://wa.me/6289679996914" target="_blank"><i class="fab fa-whatsapp" style="margin-right: 1rem;"></i>089679996914</a>
+            <a style="color: #0F2C67" href=""><i class="fab fa-twitter" style="margin-right: 1rem;"></i>beheroacademyofficial@gmail.com</a>
+            <a style="color: #0F2C67" href=""><i class="fab fa-instagram" style="margin-right: 1rem;"></i>Hero Academy Office</a>
         </div>
         <div id="form-daftar">
             <form class="form">
@@ -104,24 +101,6 @@
                     <label for="inputWa">Message</label>
                     <textarea type="number" class="form-control" id="inputWa" style="height: 8rem;"></textarea>
                 </div>
-                <!-- <div class="form-row">
-                    <div class="form-group">
-                        <label for="inputPosisi">Posisi</label>
-                        <select class="form-control" id="inputPosisi">
-                            <option>FOTOGRAFER</option>
-                            <option>WEB DEVELOPER</option>
-                            <option>DRIVER</option>
-                            <option>UI/ UX DESIGN</option>
-                            <option>TRAINER</option>
-                            <option>TEACHER</option>
-                            <option>BUILDER</option>
-                            <option>ACCOUNTANT</option>
-                            <option>MARKETING</option>
-                        </select>
-                        <input type="text" class="form-control" id="inputPosisi" placeholder="Posisi yang dilamar">
-                    </div>
-                    <br>
-                </div> -->
                 <div class="form-group">
                 </div>
                 <button onclick="onSub()" type="submit"
@@ -307,10 +286,9 @@
 
         showUser(users)
 
-
-
-
     </script>
+    <!-- <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
 
 
 </body>

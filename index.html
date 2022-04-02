@@ -32,8 +32,8 @@
             <div style="color:#0F2C67; font-size:50px; font-weight:bold; margin-bottom:3rem; width:20vw">Belajar dimanapun, Kapanpun.</div>
             <p>Temukan materi yang tepat untuk mengasah skill yang kamu miliki.</p>
             <div class='btn-regis'>
-                <a target="_blank" href="https://forms.gle/kDCgHDAthgQzwHUG6" style="background-color:orange; border: none; border-radius: 8px;width: 12vw; height: 7vh; color: white; text-align: center; padding-top: 0.3rem;">Register</a>
-                <a style="background-color:white; border: 1px solid gray; border-radius: 8px;width: 12vw; height: 7vh; color: #0F2C67;  text-align: center; padding-top: 0.3rem;">Card Event</a>
+                <a target="_blank" href="https://forms.gle/kDCgHDAthgQzwHUG6" style="background-color:orange; border: none; border-radius: 8px;width: 12vw; height: 7vh; color: white; text-align: center; padding-top: 0.5rem;">Register</a>
+                <a style="background-color:white; border: 1px solid gray; border-radius: 8px;width: 12vw; height: 7vh; color: #0F2C67;  text-align: center; padding-top: 0.5rem;">Card Event</a>
             </div>
         </div>
         <img class='div-1b' src="./image/foto2.png" alt="" />
@@ -80,31 +80,40 @@
             <a style="color: #0F2C67" href=""><i class="fab fa-instagram" style="margin-right: 1rem;"></i>Hero Academy Office</a>
         </div>
         <div id="form-daftar">
-            <form class="form">
+            <div class="alert alert-primary my-alert d-none alert-dismissible fade show" role="alert">
+                <strong>Terimakasih! </strong>Pesan anda telah kami terima.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+            <form class="form" name="behero-form">
                 <div class="form-row">
                     <div class="form-group-1">
                         <div>
-                            <label for="inputnama">Nama depan</label>
-                            <input type=" text" class="form-control" id="inputnama" placeholder="Input Nama Lengkap">
+                            <label for="inputnama">Nama Lengkap</label>
+                            <input type=" text" class="form-control" id="inputnama" placeholder="Input Nama" name="nama">
                         </div>
                         <div style="margin-left: 2rem;">
-                            <label for="inputnama">Nama belakang</label>
-                            <input type=" text" class="form-control" id="inputnama" placeholder="Input Nama Lengkap">
+                            <label for="inputnama">No Telp/ Wa</label>
+                            <input type="number" class="form-control" id="inputnama" placeholder="Input No Telp/ Wa" name="telp">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputTelp">e - Mail</label>
-                        <input type="number" class="form-control" id="inputTelp">
+                        <label for="inputTelp">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="inputWa">Message</label>
-                    <textarea type="number" class="form-control" id="inputWa" style="height: 8rem;"></textarea>
+                    <label for="inputWa">Pesan</label>
+                    <textarea type="number" class="form-control" id="inputWa" style="height: 8rem;" name="pesan"></textarea>
                 </div>
                 <div class="form-group">
                 </div>
-                <button onclick="onSub()" type="submit"
-                    style="background-color: #0F2C67; border: none; border-radius: 8px;width: 100%; height: 7vh; color: white; margin-top: 1rem;">Pesan Sekarang</button>
+                <button class="btn-kirim" type="submit"
+                    style="background-color: #0F2C67; border: none; border-radius: 8px;width: 30%; height: 6vh; color: white; margin-top: 1rem; margin-right: 1rem;">Kirim
+                </button>
+                <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                </button>
             </form>
         </div>    
     </div>
@@ -135,28 +144,6 @@
         </div>
     </div>
     
-
-    <!-- cek data -->
-    <!-- <div>
-        <button onclick="showUser()" type="submit" >klik untuk liat data</button>
-        <table id="table-data">
-            <thead>
-                <tr>
-                    <th>Nama</th>
-                    <th>No Telp</th>
-                    <th>No Wa</th>
-                    <th>Posisi</th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-    </div> -->
-
-    <!-- Button trigger modal
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-        Launch static backdrop modal
-    </button> -->
-
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop-img1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -238,55 +225,38 @@
         </script>
     <script var myModal=document.getElementById('myModal') var myInput=document.getElementById('myInput')
         myModal.addEventListener('shown.bs.modal', function () { myInput.focus() })>
-        </script>
-    <script>
-
-        let onSub = () => {
-            let nama = document.getElementById("inputnama").value
-            let noTelp = document.getElementById("inputTelp").value
-            let noWa = document.getElementById("inputWa").value
-            let posisi = document.getElementById("inputPosisi").value
-            // console.log(nama, noTelp, noWa, posisi)
-
-            alert(`
-            Form Pendaftaran :
-
-                Nama Lengkap : ${nama}
-                No Telp : ${noTelp}
-                No Wa : ${noWa}
-                Posisi : ${posisi}
-
-            Terimakasih atas lamaran anda, ditunggu kabar baiknya ya !`)
-
-            users.post(new Pelamar(nama, noTelp, noWa, posisi))
-            showUser(users)
-
-        }
-        
-        console.log(users)
-
-        let showUser = (data) => {
-            let tbody = document.getElementById("table-data").tBodies[0]
-            let res = ''
-
-            users.forEach(item => {
-                res += `
-                <tr>
-                    <td><center>${item.nama}</center></td>
-                    <td><center>${item.noTelp}</center></td>
-                    <td><center>${item.noWa}</center></td>
-                    <td><center>${item.posisi}</center></td>
-                </tr>
-                `
-            })
-
-            tbody.innerHTML = res
-
-        }
-
-        showUser(users)
-
     </script>
+    
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby2-AkJYOyJOTon6An3f1z6ICiehnPioPODJ5u2qKhXKmgoUjjjCquQjJTOPw3FFa0/exec'
+        const form = document.forms['behero-form']
+        const btnKirim = document.querySelector('.btn-kirim')
+        const btnLoading = document.querySelector('.btn-loading')
+        const myAlert = document.querySelector('.my-alert')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault() //jangan lakuka default ambil data
+
+            //   ketika tombol submit diklik munculkan loading, tutup kirim --> toogle
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+            // tampilkan kirim, hilangkan loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+
+            //munculkan alert
+            myAlert.classList.toggle('d-none');
+            form.reset();
+            console.log('Success!', response)
+        })
+        
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    
     <!-- <script src="./bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script> -->
 

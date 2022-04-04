@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/u1658370/public_html/
+    - export DEPLOYPATH=/home/u1658370/public_html/beheroacademy.com
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp style.css $DEPLOYPATH
     - /bin/cp artikel.html $DEPLOYPATH

@@ -1,16 +1,17 @@
 /* Place your CSS styles in this file */
 
 h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: normal;
 }
+
 .card-img-top {
-    width: 300px;
-    height: 450px;
-    border: none;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 300px;
+  height: 450px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-img-top2 {
@@ -22,11 +23,11 @@ h1 {
 }
 
 .cont {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 4rem;
-    margin-right: 5rem;
-    margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  margin-right: 5rem;
+  margin-bottom: 4rem;
 }
 
 /* Container holding the image and the text */
@@ -69,6 +70,7 @@ h1 {
   font-size: 25px;
   font-weight: 70px;
 }
+
 .bottom-right2 {
   position: absolute;
   right: 25px;
@@ -77,11 +79,11 @@ h1 {
   height: 30px;
   border: none;
   color: black;
-  text-decoration:none;
+  text-decoration: none;
   border-radius: 8px;
   background-color: #48C0D3;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
+
 }
 
 /* Bottom left text */
@@ -97,12 +99,14 @@ h1 {
   background-color: #48C0D3;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .belajar {
-  color:#0F2C67; 
-  font-size:30px; 
-  font-weight:bold;
-  margin-bottom:1;
-  width:20vw"
+  color: #0F2C67;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 1;
+  width: "20vw"
+
 }
 
 
@@ -114,17 +118,17 @@ h1 {
 }
 
 #form-daftar {
-    display: flex;
-    flex-basis: 50%;
-    flex-direction: column;
-    margin-left: 2rem;
-    margin-top: 3rem;
-    /* margin-bottom: 5rem; */
-    padding: 5vw;
-    background-color: white;
-    border: none;
-    border-radius: 35px 0 0 0px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  margin-left: 2rem;
+  margin-top: 3rem;
+  /* margin-bottom: 5rem; */
+  padding: 5vw;
+  background-color: white;
+  border: none;
+  border-radius: 35px 0 0 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 
@@ -140,8 +144,8 @@ h1 {
   padding-top: 2rem;
   position: fixed;
   background-color: white;
- 
-  
+
+
 }
 
 .btn-header {
@@ -151,18 +155,19 @@ h1 {
   /* background-color: white; */
 
 }
-.image{
+
+.image {
   width: 20%;
 }
 
-.div-1{
+.div-1 {
   display: flex;
   margin-left: 6.5rem;
   margin-right: 5rem;
   padding-top: 7rem;
 }
 
-.div-1a{
+.div-1a {
   display: flex;
   flex-direction: column;
   flex-basis: 50%;
@@ -170,18 +175,19 @@ h1 {
   margin-top: 4rem;
 }
 
-.div-1b{
+.div-1b {
   display: flex;
   flex-basis: 50%;
   width: 50%;
   margin-top: 1rem;
 }
 
-.btn-regis{
+.btn-regis {
   margin-top: 3rem;
   display: flex;
   justify-content: space-between;
 }
+
 p {
   color: rgb(83, 81, 81);
 }
@@ -197,6 +203,7 @@ p {
   flex-basis: 50%;
   width: 50%;
 }
+
 .detail {
   display: flex;
   flex-basis: 50%;
@@ -217,7 +224,7 @@ p {
   margin-left: 5rem;
   margin-top: 5rem;
   color: #0F2C67;
-  
+
 }
 
 a {
@@ -234,13 +241,14 @@ a {
 
 }
 
-.footer-1{
+.footer-1 {
   display: flex;
   flex-basis: 70%;
-  
-  
+
+
 }
-.footer-2{
+
+.footer-2 {
   display: flex;
   flex-basis: 30%;
   flex-direction: column;
@@ -252,9 +260,20 @@ a {
   margin-left: 4rem;
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
+}
+
+.a1 {
+  background-color: orange;
+  border: none;
+  border-radius: 8px;
+  width: 12vw;
+  height: 7vh;
+  color: white;
+  text-align: center;
+  padding-top: 0.5rem;
 }
 
 .form-group-1 {
@@ -264,4 +283,38 @@ a{
 .form-group {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* body{
+  display: flex;
+} */
+/* RESPONSIVE */
+/* tablet */
+@media screen and (max-width: 768px) {
+  .div-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-detail {
+    flex-direction: column;
+  }
+
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+  .div-1 {
+    flex-direction: column;
+  }
+
+  .img-detail {
+    flex-direction: column;
+  }
+
+  a .a1 .a2 {
+    width: 20vw;
+    padding: 1rem;
+  }
+
 }

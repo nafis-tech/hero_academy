@@ -1,0 +1,1 @@
+gambar responsive : tdk pakai rem, tapi vw

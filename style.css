@@ -101,8 +101,15 @@ h1 {
   text-align: left; 
   margin-bottom: 1rem;
 }
+.form-group-1{
+  display: flex;
+  flex-direction: column;
+}
 .form-detail {
   display: flex;
+  background-image: url(./image/back.jpeg) ; 
+  background-size: cover; 
+  background-repeat: no-repeat;
 }
 .form-det {
   display: flex;
@@ -263,8 +270,8 @@ h1 {
  background-color: #0F2C67;
  border: none; 
  border-radius: 1vh; 
- width: 5vw; 
- height: 6vh; 
+ width: 25%; 
+ height: 10%; 
  color: white; 
  margin-top: 1rem; 
  margin-right: 1rem;
@@ -367,7 +374,8 @@ a {
     width: 80%;
   }
   .image1{
-    width: 50vw;
+    width: 85vw;
+    margin: 2rem;
    
   }
   .div-1 {
@@ -400,7 +408,9 @@ a {
   }
  
   .btn-kirim{
-    width: 2vw;
+    width: 25%;
+    height: 5vh;
+    font-size: 3vw;
   }
   .detail {
     display: flex;
@@ -440,6 +450,7 @@ a {
     flex-direction: column;
   }
   .form-detail{
+    display: flex;
     flex-direction: column;
     margin-left: -2rem;
   }

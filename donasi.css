@@ -1,0 +1,119 @@
+@media screen and (max-width: 440px) {
+    .logo {
+        background-color: aquamarine;
+        height: 10%;
+    }
+    .container-1 {
+        background-color: burlywood;
+    }
+    .cont-artikel {
+        background-color: cornflowerblue;
+        height: 20%;
+    }
+    .cont-gambar{
+        background-color: darkcyan;
+        height: 20%;
+    }
+
+    /* div2 */
+    .container-2 {
+        background-color: rgb(180, 119, 39);
+    }
+    .cont-artikel2 {
+        background-color: rgb(184, 196, 95);
+        height: 55vh;
+    }
+    .cont-gambar2{
+        background-color: darkcyan;
+        height: 55vh;
+    }
+
+    /* project */
+    .project {
+        background-color: rgb(41, 193, 198);
+    }
+    .judul1 {
+        background-color: magenta;
+    }
+    .judul1 {
+        background-color: rgb(227, 187, 227);
+    }
+    .card1 .card2 .card3{
+        background-color: aquamarine;
+        height: 40vh;
+    }
+
+    /* pesan-video */
+    .container-3 {
+        background-color: beige;
+    }
+    .cont-video {
+        background-color: darkgoldenrod;
+    }
+    .cont-pesan {
+        background-color: rgb(221, 195, 129);
+    }
+
+    /* footer */
+    footer {
+        background-color: darkturquoise;
+    }
+}
+
+
+@media screen and (max-width: 770px) {
+    .logo {
+        background-color: rgb(220, 37, 16);
+    
+    }
+    .container-1 {
+        background-color: burlywood;
+    }
+    .cont-artikel {
+        background-color: cornflowerblue;
+    }
+    .cont-gambar{
+        background-color: darkcyan;
+    }
+
+    /* div2 */
+    .container-2 {
+        background-color: rgb(180, 119, 39);
+    }
+    .cont-artikel2 {
+        background-color: rgb(49, 190, 66);
+    }
+    .cont-gambar2{
+        background-color: darkcyan;
+    }
+
+    /* project */
+    .project {
+        background-color: rgb(41, 193, 198);
+    }
+    .judul1 {
+        background-color: magenta;
+    }
+    .judul1 {
+        background-color: rgb(227, 187, 227);
+    }
+    .card {
+        background-color: aquamarine;
+    }
+
+    /* pesan-video */
+    .container-3 {
+        background-color: beige;
+    }
+    .cont-video {
+        background-color: darkgoldenrod;
+    }
+    .cont-pesan {
+        background-color: rgb(221, 195, 129);
+    }
+
+    /* footer */
+    footer {
+        background-color: darkturquoise;
+    }
+}

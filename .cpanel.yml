@@ -3,16 +3,11 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/u1658370/public_html/beheroacademy.com
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp styles.css $DEPLOYPATH
-    - /bin/cp about.html $DEPLOYPATH
-    - /bin/cp blog.html $DEPLOYPATH
-    - /bin/cp contact.html $DEPLOYPATH
-    - /bin/cp practice.html $DEPLOYPATH
-    
-    - /bin/cp handworld.jpg $DEPLOYPATH
-    - /bin/cp hitamputih.jpeg $DEPLOYPATH
-    - /bin/cp VABFE.jpg $DEPLOYPATH
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R css $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
-
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp artikel.html $DEPLOYPATH
+    - /bin/cp donasi.html $DEPLOYPATH
+    - /bin/cp sylabus.html $DEPLOYPATH
+    - /bin/cp other.css $DEPLOYPATH
+    - /bin/cp scripts.js $DEPLOYPATH
+    - /bin/cp -R image $DEPLOYPATH
+    - /bin/cp -R bootstrap $DEPLOYPATH
